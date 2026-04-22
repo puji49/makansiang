@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Event onChange</title>
+<script>
+function pilihMakanan(value) {
+document.getElementById('ket').innerHTML =
+'Makanan yang saya pilih adalah: '+value;
+}
+</script>
+</head>
+<body>
+<h1>Makan Siang Hari Kamis</h1>
+<form>
+<select name="makanan" id="makanan"
+onChange="pilihMakanan(this.value)">
+<option valu e="Ba kso"> Bakso </opt ion>
+<option value="Soto">Soto</option>
+<option value="Sate">Sate</option>
+</select>
+<span id="ket" />
+</form>
+</html>
